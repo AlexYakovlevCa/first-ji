@@ -1,0 +1,24 @@
+
+/* BASE */
+@import './base/base' ;
+
+
+
+/* HELPERS */
+@import './setup/helpers';
+@import './setup/functions';
+@import './setup/typigraphy';
+
+
+
+/* CMPS */
+@import './cmps/card';
+@import './cmps/footer';
+@import './cmps/contact-us';
+@import './cmps/about';
+@import './cmps/hero';
+@import './cmps/header';
+@import './cmps/review-cards';
+
+/* APP */
+@import './pages/app';

@@ -1,0 +1,48 @@
+.contact {
+    background-color: #f67e7e;
+    position: relative;
+    .contact-bg-img{
+        position: absolute;
+        bottom: 0;
+        background-image: url(../images/bg-pattern-home-6-about-5.svg);
+        background-repeat: no-repeat;
+        width: 200px;
+        height:143px;
+    }
+    .contact-us-container {
+        display: flex;
+        height:em(200px);
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 3em;
+
+        h2 {
+            width: rem(504px);
+            color: #012f34;
+            font-family: Livvic;
+            font-size: rem(48px);
+            font-weight: 700;
+            line-height: rem(48px);
+        }
+        & .contact-us{
+            color: #012f34;
+            font-weight: 600;
+            border-color: #012f34;
+        }
+    }
+}
+
+
+
+
+/*
+export const ContactUs =()=>{
+    return <section className="contact">
+        <div className="contact-bg-img"></div>
+        <div className="contact-us-container main-layout">
+        <h2>Ready to get started?</h2>
+        <div className="contact-us"></div>
+        </div>
+    </section>
+}
+*/

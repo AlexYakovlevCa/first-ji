@@ -1,0 +1,100 @@
+.footer {
+    background-color: #002529;
+
+    .footer-container {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .company-info {
+            display: flex;
+            gap: 8.5em;
+
+            .page-nav {
+                flex-direction: column;
+                gap: 2em;
+            }
+
+            .full-adress {
+                width: 445px;
+                height: 94px;
+                opacity: 0.6;
+                color: #ffffff;
+                font-family: LivvicSemiBold;
+                font-size: rem(17px);
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+            }
+        }
+
+        .links-rights {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2.5em;
+
+            p {
+                width: 255px;
+                height: 25px;
+                opacity: 0.6;
+                color: #ffffff;
+                font-family: "Livvic - Semi Bold";
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: right;
+            }
+
+            .links {
+                // height: 200px;
+                align-self: flex-end;
+                display: flex;
+                gap: 1em;
+
+                & span {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background-repeat: no-repeat;
+
+                    &.facebook {
+                        background-image: url('../images/icon-facebook.svg');
+                    }
+
+                    &.pintrest {
+                        background-image: url('../images/icon-pinterest.svg');
+                    }
+
+                    &.twitter {
+                        background-image: url('../images/icon-twitter.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*
+xport const Footer = () => {
+    return <section className="footer">
+        <div className="footer-container main-layout">
+         
+            <div className="links-rights">
+                <div className="links">
+                <span className="facebook"></span>
+                <span className="pintrest"></span>
+                <span className="instegram"></span>
+                </div>
+                <p className="copyrights">Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+}
+
+*/

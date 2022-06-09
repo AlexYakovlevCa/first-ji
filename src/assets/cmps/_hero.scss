@@ -1,0 +1,83 @@
+.hero {
+    
+    background-color: #014e56;
+
+    .hero-container {
+        height: 500px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+
+        .hero-subititle {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 4.8em;
+
+            .line {
+                width: 50px;
+                height: 4px;
+                background-color: #79c8c7;
+            }
+
+            p {
+                width: 435px;
+                height: 109px;
+                color: #ffffff;
+                font-family: LivvicSemiBold;
+                font-size: 18px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 28px;
+                text-align: left;
+            }
+        }
+
+        .hero-title {
+            width: 620px;
+            height: 201px;
+            color: #ffffff;
+            font-family: Livvic;
+            font-size: 100px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 100px;
+            text-align: left;
+
+            span {
+                color: #f67e7e;
+            }
+
+
+        }
+        .hero-background-img{
+            height: 100px;
+            width: 360px;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url('../images/bg-pattern-home-2.svg');
+        }
+    }
+}
+
+
+
+
+
+/*
+   return <section className="hero">
+        <div className="hero-container main-layout">
+            <h2 className="hero-title">Find the best <span>talent</span></h2>
+            <div className="hero-subititle">
+                <div className="line"></div>
+                <p className="hero-paragraph">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+            </div>
+            <div className="hero-background-img"></div>
+
+        </div>
+    </section>
+    */

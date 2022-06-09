@@ -1,0 +1,116 @@
+.about {
+    height: 680px;
+    width: 100%;
+    background-color: #012f34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .about-container {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .about-headline {
+            display: flex;
+            flex-direction: column;
+            gap: 2.7em;
+
+            .line {
+                width: 50px;
+                height: 4px;
+                background-color: #f67e7e;
+            }
+
+            .about-title {
+                width: 445px;
+                height: 145px;
+                color: #ffffff;
+                font-family: Livvic;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+            }
+
+        }
+
+        .about-articles {
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            align-self: flex-end;
+
+            .information {
+                display: flex;
+                gap: 1.5em;
+            }
+
+            .article-data {
+                display: flex;
+                flex-direction: column;
+                gap: .5em;
+
+                .title {
+                    width: 445px;
+                    height: 28px;
+                    color: #f67e7e;
+                    font-family: Livvic;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    text-align: left;
+                }
+
+                & p {
+                    width: 445px;
+                    height: 47px;
+                    opacity: 0.8;
+                    color: #ffffff;
+                    font-family: LivvicSemiBold;
+                    font-size: 15px;
+                    font-weight: 200;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 25px;
+                    text-align: left;
+
+                }
+            }
+        }
+    }
+
+    .about-bg-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 244px;
+        background-image: url('../images/bg-pattern-home-3.svg');
+    }
+}
+
+
+
+/*
+ <div className="about-bg-img"></div>
+        <div className="about-container">
+            <div className="about-headline">
+                <div className="line"></div>
+                <div className="about-title">Build &amp; manage distributed teams like no one else.</div>
+            </div>
+            <article className="about-articles">
+            {articels.map((article,idx)=><div key={idx+1}>
+                <div className="artircle-img">
+                    <img src={article.img} alt="" />
+                </div>
+                <div className="article-data">
+                    <h1 className="title">{article.title}</h1>
+                    <p>{article.subtitle}</p>
+                </div>
+            </div>)}
+            </article>
+        </div>
+*/

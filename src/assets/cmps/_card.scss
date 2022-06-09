@@ -1,0 +1,92 @@
+.review-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px ;
+    
+
+
+    .preson-review {
+        z-index: 2;
+        width: rem(350px);
+        height: rem(94px);
+        color: #ffffff;
+        font-family: LivvicSemiBold;
+        font-size: rem(15px);
+        font-weight: 100;
+        line-height: rem(25px);
+        text-align: center;
+        margin-block-end: 30px;
+    }
+.person-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 30px;
+    .person-fullname {
+        width: rem(350px);
+        height: rem(28px);
+        color: #79c8c7;
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .person-role {
+        width: em(350px);
+        height: em(18px);
+        color: #ffffff;
+        font-family: LivvicMed;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+    .cards-background-img {
+        top: 0;
+        
+        position: absolute;
+        width: em(67px);
+        height: em(56px);
+        background-image: url('../images/icon-quotes.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .person-img-container {
+        width: em(62px);
+        height: em(62px);
+        border: 2px solid #c4fffe;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+/*
+
+  return <article className="review-card">
+        <div className="cards-background-img"></div>
+        <p className="preson-review"> {card.review}</p>
+        <div className="person-fullname">{card.fullname}</div>
+        <div className="person-role">{card.role}</div>
+        <div className="person-img-contianer">
+            <img src={card.img} alt="" />
+        </div>
+
+    </article>
+    */
