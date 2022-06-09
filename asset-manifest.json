@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/first-ji/static/css/main.073c9b0a.css",
+    "main.js": "/first-ji/static/js/main.214ee906.js",
+    "static/js/787.7e701027.chunk.js": "/first-ji/static/js/787.7e701027.chunk.js",
+    "static/media/logo.svg": "/first-ji/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/first-ji/index.html",
+    "main.073c9b0a.css.map": "/first-ji/static/css/main.073c9b0a.css.map",
+    "main.214ee906.js.map": "/first-ji/static/js/main.214ee906.js.map",
+    "787.7e701027.chunk.js.map": "/first-ji/static/js/787.7e701027.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.214ee906.js"
+  ]
+}
