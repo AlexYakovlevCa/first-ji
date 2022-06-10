@@ -36,19 +36,18 @@
             gap: 2.5em;
 
             p {
-                width: 255px;
+                // width: 255px;
                 height: 25px;
                 opacity: 0.6;
                 color: #ffffff;
-                font-family: "Livvic - Semi Bold";
-                font-size: 17px;
+                font-family: LivvicSemiBold;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 25px;
                 text-align: right;
             }
 
             .links {
-                // height: 200px;
                 align-self: flex-end;
                 display: flex;
                 gap: 1em;
@@ -79,22 +78,3 @@
 
 
 
-
-/*
-xport const Footer = () => {
-    return <section className="footer">
-        <div className="footer-container main-layout">
-         
-            <div className="links-rights">
-                <div className="links">
-                <span className="facebook"></span>
-                <span className="pintrest"></span>
-                <span className="instegram"></span>
-                </div>
-                <p className="copyrights">Copyright 2020. All Rights Reserved</p>
-            </div>
-        </div>
-    </section>
-}
-
-*/
