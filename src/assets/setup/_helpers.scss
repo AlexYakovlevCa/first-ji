@@ -1,6 +1,21 @@
 .main-layout {
-    width: 1115px;
+    width: 350px;
     margin: auto;
+}
+@media (min-width:550px) {
+    .main-layout {
+        width: 510px;
+    }
+}
+@media (min-width:800px) {
+    .main-layout {
+        width: 760px;
+    } 
+}
+@media (min-width:1150px) {
+    .main-layout {
+        width: 1100px;
+    } 
 }
 
 .contact-us {

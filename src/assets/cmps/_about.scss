@@ -1,38 +1,40 @@
 .about {
-    height: 680px;
+   min-height: 680px;
     width: 100%;
     background-color: #012f34;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-block: 40px ;
 
     .about-container {
-        height: 400px;
+        min-height: 400px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
 
         .about-headline {
             display: flex;
             flex-direction: column;
-            gap: 2.7em;
 
             .line {
                 width: 50px;
                 height: 4px;
                 background-color: #f67e7e;
+                margin-block-end: 20px;
             }
 
             .about-title {
-                width: 445px;
-                height: 145px;
+                max-width: 245px;
                 color: #ffffff;
                 font-family: Livvic;
-                font-size: 48px;
+                font-size: 32px;
                 font-weight: 700;
-                line-height: 48px;
+                line-height: 38px;
                 text-align: left;
+                margin-block-end: 60px;
             }
 
         }
@@ -40,42 +42,48 @@
         .about-articles {
             display: flex;
             flex-direction: column;
-            gap: 3em;
-            align-self: flex-end;
+            gap: 4em;
+            align-self: center;
 
             .information {
                 display: flex;
-                gap: 1.5em;
+                gap: 1em;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             .article-data {
                 display: flex;
                 flex-direction: column;
                 gap: .5em;
+                justify-content: center;
+                align-items: center;
 
                 .title {
-                    width: 445px;
+                    max-width: 235px;
                     height: 28px;
                     color: #f67e7e;
                     font-family: Livvic;
                     font-size: 18px;
                     font-weight: 700;
                     line-height: 28px;
-                    text-align: left;
+                    text-align: center;
                 }
 
                 & p {
-                    width: 445px;
+                    max-width: 345px;
                     height: 47px;
                     opacity: 0.8;
                     color: #ffffff;
                     font-family: LivvicSemiBold;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: 200;
                     font-style: normal;
                     letter-spacing: normal;
                     line-height: 25px;
-                    text-align: left;
+                    text-align: center;
+
 
                 }
             }
@@ -85,7 +93,7 @@
     .about-bg-img {
         position: absolute;
         right: 0;
-        bottom: 0;
+        top:  0;
         width: 100px;
         height: 244px;
         background-image: url('../images/bg-pattern-home-3.svg');
@@ -93,3 +101,102 @@
 }
 
 
+@media (min-width:550px) {
+    
+}
+@media (min-width:800px) {
+    
+
+    .about {
+        
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-block: 0;
+    
+        .about-container {
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+
+    
+            .about-headline {
+                display: flex;
+                flex-direction: column;
+                gap: 2.7em;
+    
+                .line {
+                  
+                    margin-block-end: none;
+                }
+    
+                .about-title {
+                    height: 145px;
+                    max-width: 445px;
+                    color: #ffffff;
+                    font-family: Livvic;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    text-align: left;
+                }
+    
+            }
+    
+            .about-articles {
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-self: flex-end;
+    
+                .information {
+                    display: flex;
+                    gap: 1.5em;
+                    flex-direction: row;
+                }
+    
+                .article-data {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5em;
+                    align-items: flex-start;
+    
+                    .title {
+                        color: #f67e7e;
+                        font-family: Livvic;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        text-align: left;
+                    }
+    
+                    & p {
+                        max-width: 445px;
+                        height: 47px;
+                        opacity: 0.8;
+                        color: #ffffff;
+                        font-family: LivvicSemiBold;
+                        font-size: 15px;
+                        font-weight: 200;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: 25px;
+                        text-align: left;
+    
+                    }
+                }
+            }
+        }
+    
+        .about-bg-img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: unset;
+            
+           
+        }
+    }
+}

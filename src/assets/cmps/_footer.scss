@@ -2,38 +2,41 @@
     background-color: #002529;
 
     .footer-container {
-        height: 200px;
+        min-height: 200px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        padding-block: 60px;
 
         .company-info {
             display: flex;
-            gap: 8.5em;
+            gap: 2em;
+            flex-direction: column;
 
             .page-nav {
                 flex-direction: column;
-                gap: 2em;
+                gap: 1em;
             }
 
             .full-adress {
-                width: 445px;
-                height: 94px;
+
                 opacity: 0.6;
                 color: #ffffff;
                 font-family: LivvicSemiBold;
                 font-size: rem(17px);
                 font-weight: 400;
                 line-height: 25px;
-                text-align: left;
+                text-align: center;
             }
         }
 
         .links-rights {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            gap: 2.5em;
+            justify-content: center;
+            gap: 1em;
 
             p {
                 // width: 255px;
@@ -48,7 +51,7 @@
             }
 
             .links {
-                align-self: flex-end;
+                align-self: center;
                 display: flex;
                 gap: 1em;
 
@@ -75,6 +78,56 @@
     }
 }
 
+@media (min-width:550px) {}
 
+@media (min-width:800px) {
+    .footer {
+        background-color: #002529;
 
+        .footer-container {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 0;
 
+            .company-info {
+                display: flex;
+                flex-direction: row;
+                gap: 8.5em;
+
+                .page-nav {
+                    flex-direction: column;
+                    gap: 2em;
+                }
+
+                .full-adress {
+                    max-width: 445px;
+                    text-align: left;
+                }
+            }
+
+            .links-rights {
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2.5em;
+
+                p {
+                    // width: 255px;
+                    height: 25px;
+                    opacity: 0.6;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: right;
+                }
+
+                .links {
+                    align-self: flex-end;
+                    display: flex;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+}

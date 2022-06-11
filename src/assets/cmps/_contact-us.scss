@@ -1,33 +1,41 @@
 .contact {
     background-color: #f67e7e;
     position: relative;
-    .contact-bg-img{
+
+    .contact-bg-img {
         position: absolute;
         bottom: 0;
         background-image: url(../images/bg-pattern-home-6-about-5.svg);
         background-repeat: no-repeat;
         width: 200px;
-        height:143px;
+        height: 123px;
     }
+
     .contact-us-container {
         display: flex;
-        height:em(200px);
+        height: rem(300px);
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding-inline: 3em;
+        gap: 1em;
 
         h2 {
-            width: rem(504px);
+            max-width: rem(504px);
             color: #012f34;
             font-family: Livvic;
-            font-size: rem(48px);
+            font-size: rem(33px);
             font-weight: 700;
-            line-height: rem(48px);
+            line-height: rem(33px);
+            text-align: center;
         }
-        & .contact-us{
+
+        & .contact-us {
             color: #012f34;
             font-weight: 600;
             border-color: #012f34;
+            border-width: 3px;
+            height: 50px;
         }
     }
 }
@@ -35,3 +43,30 @@
 
 
 
+@media (min-width:500px) {}
+
+@media (min-width:800px) {
+    .contact {
+
+        .contact-bg-img {
+            height: 143px;
+        }
+
+        .contact-us-container {
+            height: em(200px);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            h2 {
+                font-size: rem(48px);
+                line-height: rem(48px);
+                max-width: rem(504px);
+                text-align: left;
+            }
+
+            & .contact-us {
+
+            }
+        }
+    }
+}

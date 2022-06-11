@@ -2,23 +2,24 @@
     background-color: #004047;
 
     .review-cards {
-        width: 1440px;
-        height: 745px;
+        padding-block: 150px;
+        min-height: 745px;
+
 
         h2 {
-            width: 932px;
-            height: 100px;
+            max-width: 332px;
             color: #ffffff;
             font-family: Livvic;
-            font-size: 48px;
+            font-size: 34px;
             font-weight: 700;
-       
-            line-height: 48px;
+
+            line-height: 34px;
             text-align: center;
-            span{
-                
+
+            span {
+
                 color: #79c8c7;
-             
+
             }
         }
 
@@ -29,6 +30,41 @@
 
         .cards-container {
             display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media (min-width:800px) {
+
+
+
+    .review-cards-container {
+
+        .review-cards {
+            padding-block: 0;
+
+            h2 {
+                max-width: 932px;
+                font-size: 48px;
+                font-weight: 700;
+
+                line-height: 48px;
+                text-align: center;
+
+                span {
+
+                    color: #79c8c7;
+
+                }
+            }
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cards-container {
+                flex-direction: row;
+            }
         }
     }
 }
